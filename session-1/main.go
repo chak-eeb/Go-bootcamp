@@ -5,9 +5,11 @@ import (
 	"unicode/utf8"
 )
 
+type Day int
+
 const maxStringLength = 10
 const (
-	Monday = iota + 1
+	Monday Day = iota + 1
 	Tuesday
 	Wednesday
 	Thursday
@@ -35,8 +37,25 @@ func compareStrings(a, b string) {
 
 }
 
-func printDay(day) {
-
+func printDay(day Day) {
+	fmt.Println("--- Task 3: Constants and IOTA ---")
+	fmt.Println("Max string length is: ", maxStringLength)
+	fmt.Println("--- Days of the Week ---")
+	if day == Monday {
+		fmt.Println("Monday: ", Monday)
+	} else if day == Tuesday {
+		fmt.Println("Tuesday: ", Tuesday)
+	} else if day == Tuesday {
+		fmt.Println("Wednesday: ", Wednesday)
+	} else if day == Tuesday {
+		fmt.Println("Thursday: ", Thursday)
+	} else if day == Tuesday {
+		fmt.Println("Friday: ", Friday)
+	} else if day == Tuesday {
+		fmt.Println("Saturday: ", Saturday)
+	} else {
+		fmt.Println("Sunday: ", Sunday)
+	}
 }
 
 func main() {
@@ -50,5 +69,7 @@ func main() {
 	compareStrings(str1, str2)
 	compareStrings(str2, str3)
 	compareStrings(str1, str3)
+
+	printDay(Tuesday)
 
 }
