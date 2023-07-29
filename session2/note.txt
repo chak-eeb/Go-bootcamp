@@ -1,0 +1,15 @@
+Shadowing in go:
+shadowing occurs when you try to declare a variable that was already declared. for example:
+
+var x int
+
+if x, err := strconv.Atoi(x "10"); err == nil{
+    fmt.Println("x is: ", x)
+} else{
+    fmt.Println(format "x is: ", x)
+}
+
+in this case the first print will be x = 10 but the second will be x = 0
+x has been shadowed
+
+to fix it we can declare both x and err outside the if statement and not use := sign 
