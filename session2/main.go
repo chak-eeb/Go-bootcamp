@@ -23,6 +23,13 @@ func convertToInt(str string) int {
 	return num
 }
 
+// short if. let's change the statement above to a short statement
+// if num, err := strconv.Atoi(str); err == nil{
+// 	return num
+// } else{
+// 	fmt.Println("Error: ", err)
+// }
+
 func main() {
 	div, err := divide(5, 3)
 	if err != nil {
