@@ -37,4 +37,19 @@ func main() {
 	}
 	fmt.Println("Result: ", div)
 	fmt.Println("the int value of that string is: ", convertToInt("3597"))
+
+	// Switch statement
+	fruit := "kiwi"
+
+	switch fruit {
+	case "apple":
+		fmt.Println("I like apple juice")
+	case "banana":
+		fmt.Println("i like to eat Bananas")
+	case "strawberries":
+		fmt.Println("i like them sweet")
+	default:
+		fmt.Println("i like to eat " + fruit + " too but i prefer apples and bananas")
+
+	}
 }
