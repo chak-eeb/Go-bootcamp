@@ -58,7 +58,7 @@ func printDay(day Day) {
 	}
 }
 
-func main() {
+func main() { // main function is the entry point of the program. everything in this function will be executed
 	var str1 string = "dog"
 	var str2 string = "apple"
 	str3 := "cat"
