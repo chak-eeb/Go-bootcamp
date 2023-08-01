@@ -37,6 +37,15 @@ func looping() {
 	}
 }
 
+// for loop using range
+
+func loopRange() {
+	str := "this is great"
+	for i, value := range str {
+		fmt.Printf("the letter at index %d is %c \n ", i, value)
+	}
+}
+
 func main() {
 	div, err := divide(5, 3)
 	if err != nil {
@@ -61,4 +70,5 @@ func main() {
 	}
 
 	looping()
+	loopRange()
 }
