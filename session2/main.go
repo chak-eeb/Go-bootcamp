@@ -28,7 +28,14 @@ func convertToInt(str string) int {
 // 	return num
 // } else{
 // 	fmt.Println("Error: ", err)
-// }
+
+// For loop
+
+func looping() {
+	for i := 1; i <= 6; i++ {
+		fmt.Println("i is: ", i)
+	}
+}
 
 func main() {
 	div, err := divide(5, 3)
@@ -52,4 +59,6 @@ func main() {
 		fmt.Println("i like to eat " + fruit + " too but i prefer apples and bananas")
 
 	}
+
+	looping()
 }
